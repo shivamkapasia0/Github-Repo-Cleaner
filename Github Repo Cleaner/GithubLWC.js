@@ -181,7 +181,7 @@ export default class GithubLWC extends LightningElement {
             }
             this.isModalOpen = true;
             this.showList = true;
-            this.showInfoToast('success', 'Authorization Successfull' + 'Generating Repo List');
+            this.showInfoToast('success', 'Authorization Successfull' + '');
         }).catch(error => {
             this.showInfoToast('error', '! ' + error);
             console.log('error' + error);
