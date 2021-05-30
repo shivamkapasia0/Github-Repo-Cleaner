@@ -1,7 +1,8 @@
 import { LightningElement, track} from 'lwc';
+import { NavigationMixin } from 'lightning/navigation';
 import {ShowToastEvent} from 'lightning/platformShowToastEvent';
 
-export default class GithubLWC extends LightningElement {
+export default class GithubLWC  extends NavigationMixin(LightningElement) {
 
     @track userName;
     @track token;
@@ -186,6 +187,24 @@ export default class GithubLWC extends LightningElement {
             this.showInfoToast('error', '! ' + error);
             console.log('error' + error);
         })
+    }
+    tokenBtnClick(){
+       this[NavigationMixin.Navigate]({
+            type : 'standard__webPage',
+            attributes: {
+                url : 'https://github.com/settings/tokens'
+            }
+        });
+      console.log('btn clicker');
+    }
+
+    howToBtnClick(){
+       this[NavigationMixin.Navigate]({
+            type : 'standard__webPage',
+            attributes: {
+                url : 'https://github.com/shivamkapasia0/Github-Repo-Cleaner'
+            }
+        });
     }
 
     hitGitAPI() {
