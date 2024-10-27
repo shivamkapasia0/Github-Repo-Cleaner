@@ -3,7 +3,7 @@
 ####  _The Best Repo Cleaner, Ever_
 
 
-[Github Repo Cleaner](https://shivamkapasia-developer-edition.ap16.force.com/githubLWC/s/) is a multiple repo deletor app, powered by <strong> Lightning Web Components </strong> .
+[Github Repo Cleaner](https://kapasia-dev-ed.my.site.com/githubLWC/s/) is a multiple repo deletor app, powered by <strong> Lightning Web Components </strong> .
 ![enter image description here](https://raw.githubusercontent.com/shivamkapasia0/Github-Repo-Cleaner/main/screenshot-MainPage.png)
 
 
